@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap-grid.css">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap-grid.css.map">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap-grid.min.css.map">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap-reboot.css">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap-reboot.min.css.map">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap.css.map">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap.min.css.map">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/login.css">
+    <script>
+     function myFunction()
+     {
+         var username=document.getElementById('username').value;
+         var pwd=document.getElementById('pwd').value;
+         if(username=="")
+         {
+             document.getElementById('uerror').innerHTML="*Username must be entered";
+            // return false;
+         }
+         if(pwd=="")
+         {
+             document.getElementById('perror').innerHTML="*Password must be entered";
+             return false;
+         }
+         
+     }
+    </script>    
+       
+        
+    </head>
+    <body>
+        <header>
+        
+            <!-- <nav> -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="registration.html">SIGN UP</a></li>
+                    <li><a href="login.html" class="active">LOGIN</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#search">SEARCH</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+
+                </ul>
+            <!-- </nav> -->
+           
+                
+            
+        </header>
+        <div class="div1">
+            <h1>Library</h1>
+            </div>
+            <div class="div2">
+               
+                     <h3>Sign in</h3><br>
+                   
+                         <h4>Login ID</h4><br>
+                         <input type="text" name="username" id="username"><br>
+                        <span style="color:red" id="uerror"></span>
+                        <div class="div3">
+                        <h4>Password</h4><br>
+                         <input type="password" name="pwd" id="pwd"><br>
+                         <span style="color:red" id="perror"></span>
+                        </div>
+                        <div class="div3">
+                         <input type="submit" value="Login" name="blogin" onclick="myFunction();"><br>
+                        </div>
+             
+                        <a href="login.html">Forgot password?</a>
+                        <a href="registration.html" style="float: right">New user?</a>
+                
+            </div>
+            
+    </body>
+    
+</html>

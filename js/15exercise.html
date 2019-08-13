@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+.bo
+{
+    border:1px solid black;
+    background-color:aqua;
+    min-height:300px;
+    text-align:center;
+    width:500px;
+    margin-left:500px;
+}
+.butt
+{
+    margin-top:30px;
+}
+.lab
+{
+    margin-top:20px;
+}
+</style>
+</head>
+<body>
+<div class="bo">
+<h1>Welcome to My Website</h1>
+<h4>Who are you!</h4>
+<!--<form name="myform" method="post" onsubmit="return myFunction()">-->
+<input type="text" name="fname" id="fname"/><br>
+<input type="submit" value="submit" onclick="myFunction()" class="butt"/>
+<!--</form>-->
+<div id="demo" class="lab"> 
+</div>
+</div>
+<script>
+function myFunction()
+{
+//var xx=document.forms["myform"]["fname"].value
+xx=document.getElementById('fname').value
+if(xx=="")
+{
+    alert('Name must be filled out')
+    return false
+}
+else
+{
+ document.getElementById('demo').innerHTML=xx
+}
+}
+
+</script>
+</body>
+</html>

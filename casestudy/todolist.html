@@ -1,0 +1,84 @@
+<html>
+<head>
+<style>
+ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:blue;
+}
+li{
+  float:left;
+}
+li a{
+  display:block;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  color:white;
+}
+</style>
+<script type="application/javascript">
+function loadJSON(){
+    var data_file="https://jsonplaceholder.typicode.com/todos";
+    var http_request=new XMLHttpRequest();
+    http_request.onreadystatechange=function()
+    {
+        if(http_request.readyState == 4)
+        {
+            //javascript function JSON.parse to parse json data
+            var jsonObj=JSON.parse(http_request.responseText);
+            //jsonObj variable now contains the data structure and can be accessed as jsonObj.name and
+            //jsonObj.country
+            //let i=0
+
+           
+           // { 
+               
+               //document.getElementById("userid").innerHTML=jsonObj[i].userId;
+              // document.getElementById("id").innerHTML=jsonObj[i].id;
+              // document.getElementById("title").innerHTML=jsonObj[i].title;
+              // document.getElementById("completed").innerHTML=jsonObj[i].completed;
+              
+               
+         //  }
+          var output = "";
+        for (var i = 0; i < data.length; i++) {
+            output +=
+                "<hr>" +
+                "<p> Adapter Name: " + data[i].name + "</p>" +
+                "<p> IP Address:  " + data[i].ip + "</p>" +
+                "<p> MAC Address:  " + data[i].mac + "</p>" +
+                "<p> Adapter ID:  " + data[i].id + "</p>" +
+                "<hr>";
+        }
+        $(".network-info").html(output);
+           
+        }
+    }
+    http_request.open("GET",data_file,true);
+    http_request.send();
+}
+</script>
+<title>Try json</title>
+</head>
+<body>
+<h1>Daily tasks</h1>
+<table class="src">
+<tr>
+<th>User Id</th><th>Id</th>
+<th>Title</th><th>Completed</th>
+    </tr>
+<tr><td><div id="userid"></div></td>
+<td><div id="id"></div></td>
+<td><div id="title"></div></td>
+<td><div id="completed"></div></td>
+</tr>
+</table>
+<div class="ta"></div>
+<div class="central">
+<button type="button" onclick="loadJSON()">Submit</button>
+</div>
+</body>
+</html>

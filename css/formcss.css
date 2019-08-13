@@ -1,0 +1,61 @@
+.container
+{
+    background-color:powderblue;
+    text-align: center;
+}
+header
+{
+    background-color:powderblue;
+    text-align: center;
+    border-bottom:green 3px solid;
+}
+body
+{
+    background-color:lavender;
+}
+#spanid
+{
+    color: white;
+}
+#mail
+{
+  float: left;
+    
+}
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: right;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  #imgsec
+  {
+      background-image: url("/home/ubuntu/Desktop/DIVYA/img/ppark.jpg");
+      text-align:center;
+      min-height: 400px;
+      width: 100%;
+      color:white;
+     
+
+
+  }
+  h1
+  {
+
+  }
+  .bottomsec
+  {
+
+  }

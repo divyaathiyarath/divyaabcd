@@ -1,0 +1,15 @@
+body
+{
+    background-color:khaki;
+    
+}
+p
+{
+ color:red;
+ margin-left: 40px;
+ background-image:url("/home/ubuntu/Desktop/DIVYA/img/ppark.jpg");
+}
+footer
+{
+    background-color:green;
+}

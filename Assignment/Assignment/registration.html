@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap-grid.css">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap-grid.css.map">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap-grid.min.css.map">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap-reboot.css">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap-reboot.min.css.map">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap.css.map">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/bootstrap.min.css.map">
+        <link rel="stylesheet" type="text/css" href="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/css/registration.css">
+       
+        
+    </head>
+    <body>
+        <header>
+        
+            <!-- <nav> -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="registration.html">SIGN UP</a></li>
+                    <li><a href="login.html" class="active">LOGIN</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#search">SEARCH</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+
+                </ul>
+            <!-- </nav> -->
+            
+        </header>
+        <div class="div1">
+                <h1>Library</h1>
+                </div>
+              
+                    <section>
+            <img src="/home/ubuntu/Desktop/DIVYA/Assignment/Assignment/img/digital-library.jpg" alt="image">
+        </section>
+        <aside>   
+              <div class="div2">
+        <form name="myform">
+                  <h3>Register here</h3>
+             <input type="text" name="regname" placeholder="Name"><br>
+            
+             <input type="text" name="regmail" placeholder="Email"><br>
+               
+             <input type="text" name="reguname" placeholder="Username"><br>
+            
+             <input type="password" name="regpwd" placeholder="Password"><br>
+            
+             <input type="submit" name="regsubmit" value="CREATE ACCOUNT" onclick="myFunction();">
+        </form>
+              </div>
+        </aside>
+        <script>
+                function myFunction()
+                {
+                   
+                    var regname=document.forms['myform']['regname'].value;
+                   
+                    var regmail=document.forms['myform']['regmail'].value;
+                  
+                    var reguname=document.forms['myform']['reguname'].value;
+                    var regpwd=document.forms['myform']['regpwd'].value;
+                    if(regname=="")
+                    {
+                       alert('Name field must not be empty');
+                       return (false)
+
+                    
+           
+                    }
+                    if(regmail=="")
+                    {
+                   
+                    alert("Email field must not be empty")
+                    return (false)
+                    }
+                    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(regmail)!=true)
+                    {
+                        alert("You have entered an invalid email address!")
+                           return (false)
+                    }
+                           
+                   
+                    if(reguname=="")
+                    {
+                  
+                    alert("Username field must not be empty");
+                    return (false)
+           
+                    }
+                    if(regpwd=="")
+                    {
+                    
+                    alert("Password field must not be empty");
+                    return (false)
+           
+                    }
+           
+           
+                }
+               </script>    
+                  
+                   
+           
+    </body>
+    
+</html>
